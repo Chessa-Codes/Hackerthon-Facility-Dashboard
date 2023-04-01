@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hospital Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+  </head>
+  <body>
+    <h1>Hospital Dashboard</h1>
+    <div class="form-container">
+      <h2>Add Patient</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <input type="submit" value="Add Patient">
+      </form>
+    </div>
+    <div class="search-container">
+      <h2>Search Patient</h2>
+      <form>
+        <label for="search-name">Name:</label>
+        <input type="text" id="search-name" name="search-name">
+        <br>
+        <input type="submit" value="Search">
+      </form>
+      <div id="search-results">
+      </div>
+      <!--<button id="send-to-lab">Send to Lab</button> -->
+
+      <ul id="names-list"></ul>
+
+      <section>
+        <h2>Lab Analysis</h2>
+        <p>No lab analyses available.</p>
+      </section>
+    </div>
+    
+    <script src="dashboard.js"></script>
+  </body>
+</html>
